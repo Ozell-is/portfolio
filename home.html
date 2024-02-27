@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-LARATTE kevin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="layout/normalize.css">
+    <link rel="stylesheet" href="layout/style.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <header id="home" class="fs-3">
+        <nav class="navbar navbar-expand-lg bg-body-secondary">
+            <div class="container">
+                <a href="#" class="navbar-brand">Mon Porfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item pe-5">
+                            <a href="#home" class="nav-link active">Accueil</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a href="#about" class="nav-link active">A propos</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a href="#project" class="nav-link active">Projet</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a href="#cv" class="nav-link active">Mon C.V.</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a href="#service" class="nav-link active">Service</a>
+                        </li>
+                        <li class="nav-item pe-5">
+                            <a href="#contact" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--a propos de moi / sous forme de card-->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="card mb-3 col-md-12">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="upload/photo-de-moi.jpg" class="img-fluid " alt="" style="height: 40vh; width: auto;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body ps-5">
+
+                            <p class="card-text fs-3">Qui suis-je? LARATTE KEVIN
+                                <br>
+                                <br>
+                                Quel est mon âge? 28 ans
+                                <br><br>
+                                Quand ait-je découvert le dêveloppement web? Début d'année 2023
+                                <br><br>
+                                Quelle est ma formation? Formation développeur d'application web avec python chez study
+                                <br><br>
+                                Les languages et les framework que je pratiques :
+                                <br><br>
+                                <img src="upload/logo/html+css.png" alt="html css logo">
+                                <img src="upload/logo/javascript.png" alt="javascript logo">
+                                <img src="upload/logo/php.jpg" alt="php logo">
+                                <img src="upload/logo/python.jpg" alt="python logo">
+                                <img src="upload/logo/flask.png" alt="flask logo">
+                                <br><br>Ceux que je compte apprendre prochainement :
+                                <br><br>
+                                <img src="upload/logo/django.png" alt="django logo">
+                                <img src="upload/logo/react.png" alt="react logo">
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mes projet / plus un accordeon-->
+    <section id="project">
+        <h1 class="fs-1 mb-5">Mon lien github :
+            <a href="https://github.com/Ozell-is" target="_blank">
+                <img src="upload/logo/github.png" target="_blank" alt="github logo" class="git-logo">
+            </a>
+            </h2>
+            <div class="accordion fs-2" id="accordionParent">
+                <!--Premier accordeon-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-2" id="accordionFront">Mes Projets : <br><br>
+                        <button class="accordion-button fs-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#firstCollapse">
+                            Mes projets Front
+                        </button>
+                    </h2>
+                    <div id="firstCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionParent">
+                        <div class="accordion-body">
+                            <ul>
+                                <li> <a href="https://association-senior-fullbootstrap.netlify.app/"
+                                        target="_blank">projet
+                                        assoc sénior</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--deuxieme accordeon-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-2">
+                        <button data-bs-toggle="collapse" data-bs-target="#secondCollapse"
+                            class="accordion-button mb-2 fs-3" id="accordionBackPHP">
+                            Mes projets avec PHP
+                        </button>
+                    </h2>
+                    <div id="secondCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionParent">
+                        <div class="accordion-body">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--troisieme accordeon-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button mb-2 fs-3" data-bs-toggle="collapse"
+                            data-bs-target="#thirdCollapse">
+                            Mes projets Python
+                        </button>
+                    </h2>
+                    <div id="thirdCollapse" class="accordion-collapse collapse" data-bs-parent="#accordionParent">
+                        <div class="accordion-body">
+                            <ul>
+                                <li> <a href="https://studi-mercadona-kl-oemig.ondigitalocean.app/">Projet mercadona
+                                        revisité(pour mon examen study)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--mon cv-->
+    <section id="cv">
+        <button class="btn bg-primary-subtle" type="button">
+            <a href="upload/Kévin Laratte_cv_2024.pdf" class="text-dark" download>Télécharger mon cv</a>
+        </button>
+        <button class="btn bg-primary-subtle">
+            <a href="upload/Kévin Laratte_cv_2024.pdf" class="text-dark" target="_blank">Visuallisez mon cv dans un
+                autre onglet</a>
+        </button>
+    </section>
+    <section id="service">
+
+    </section>
+    <footer id="contact" class="p-5" style="background-color: #FEE3D0;">
+
+
+        <h3 class="text-center fs-3">Contactez-moi</h3>
+        <form action="POST" name="contact" class="py-5" netlify>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="col form-group">
+                            <label for="contact-name" class="form-label py-2">nom et prénom</label>
+                            <input type="text" class="form-control" id="contact-name" required>
+                        </div>
+
+                        <div class="col form-group">
+                            <label for="contact-societe" class="form-label py-2">nom de société représenté</label>
+                            <input type="text" class="form-control" id="contact-societe" required>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="col form-group">
+                            <label for="contact-telephone" class="form-label py-2">numéro de téléphone</label>
+                            <input type="number" class="form-control" id="contact-telephone" required>
+                        </div>
+
+                        <div class="col form-group">
+                            <label for="contact-email" class="form-label py-2">adresse e-mail</label>
+                            <input type="text" class="form-control" id="contact-email" required>
+                        </div>
+                    </div>
+
+                    <div class="col-12 form-group">
+                        <label for="contact-message" class="form-label py-2">Votre message</label>
+                        <textarea type="text" class="form-control" id="contact-message" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary m-3 ">envoyer</button>
+            </div>
+        </form>
+
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+section{
+    margin: 5%;
+}
+
+.card img{
+    height: 80px;
+    width: 80px;
+}
+
+
+.git-logo{
+    height: 45px;
+    width: auto;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
